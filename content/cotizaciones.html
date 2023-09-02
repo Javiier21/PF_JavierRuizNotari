@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cotizaciones relevantes de criptomonedas en Mi Sitio Web de Finanzas">
+  <meta name="keywords" content="cotizaciones, criptomonedas, finanzas, bitcoin, ethereum, litecoin">
+  <title>Cotizaciones - Mi Sitio Web de Finanzas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+  <!-- In <head> after the Bootstrap CSS. -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+  <link rel="stylesheet" href="../scss/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark flex-row flex-md-column">
+      <a class="navbar-brand" href="index.html"><img src="../img/logo.png" alt="Logo" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cotizaciones.html">Cotizaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="videos.html">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center my-5 animate__animated animate__fadeInUpBig">Cotizaciones Relevantes</h1>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card animate__animated animate__fadeIn">
+              <div class="card-body">
+                <h2 class="card-title">Bitcoin</h2>
+                <p class="card-text">Precio: $50,000</p>
+                <p class="card-text">Cambio (%): +2.5%</p>
+                <img class="img-crypto img-fluid" src="../img/btc.png" alt="Bitcoin">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card animate__animated animate__fadeIn">
+              <div class="card-body">
+                <h2 class="card-title">Ethereum</h2>
+                <p class="card-text">Precio: $2,500</p>
+                <p class="card-text">Cambio (%): -1.8%</p>
+                <img class="img-crypto img-fluid" src="../img/eth.png" alt="Ethereum">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card animate__animated animate__fadeIn">
+              <div class="card-body">
+                <h2 class="card-title">Litecoin</h2>
+                <p class="card-text">Precio: $150</p>
+                <p class="card-text">Cambio (%): +3.2%</p>
+                <img class="img-crypto img-fluid" src="../img/ltc.png" alt="Litecoin">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12">
+            <h2 class="text-center">Información de Cotizaciones</h2>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Cotizaciones de Criptomonedas
+                    </button>
+                  </h2>
+                </div>
+            
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Bitcoin (BTC): $50,000</li>
+                      <li class="list-group-item">Ethereum (ETH): $2,500</li>
+                      <li class="list-group-item">Litecoin (LTC): $150</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Cotizaciones de Acciones
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Apple Inc. (AAPL): $150</li>
+                      <li class="list-group-item">Amazon.com Inc. (AMZN): $3,500</li>
+                      <li class="list-group-item">Microsoft Corporation (MSFT): $250</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Cotizaciones de Materias Primas
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Oro (XAU): $1,800</li>
+                      <li class="list-group-item">Petróleo Crudo (WTI): $70</li>
+                      <li class="list-group-item">Plata (XAG): $25</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="derechos">Derechos de autor &copy; 2023 Mi Sitio Web de Finanzas. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+  <!-- At the end of <body>, after jQuery and the Bootstrap js (Better nav bootstrap)-->
+  <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+</body>
+
+</html>

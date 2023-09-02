@@ -1,0 +1,265 @@
+// Variables
+$primary-color: #236ad4;
+$secondary-color: #333;
+$highlight-color: #f0d90f;
+$font-family: Arial, sans-serif;
+
+// Mixin para botones
+@mixin btn-style {
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: none;
+  border: none;
+  background-color: $primary-color;
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    background-color: $highlight-color;
+    text-decoration: underline;
+  }
+}
+
+// Mapa de secciones
+$sections: (
+  "titulo": (
+    "font-size": 36px,
+    "font-weight": bold,
+    "color": $secondary-color,
+    "margin-bottom": 20px
+  ),
+  "descripcion": (
+    "font-size": 18px,
+    "color": #666,
+    "margin-bottom": 20px
+  ),
+  "derechos": (
+    "color": #fff,
+    "margin-top": 20px
+  ),
+);
+
+// Bucle de operaciones para aplicar estilos a las secciones
+@each $section, $props in $sections {
+  .#{$section} {
+    @each $prop, $value in $props {
+      #{$prop}: $value;
+    }
+  }
+}
+
+// Otras definiciones de estilos
+body{
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+.card {
+  transition: box-shadow 0.3s ease; /* Agregar una transición suave al efecto */
+  
+  &:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Aplicar sombra en hover */
+  }
+}
+
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.btn-cta {
+  @include btn-style;
+}
+
+
+/* Estilos generales */
+ul.navbar-nav.ml-auto {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-weight: bold;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.btn {
+  border: none;
+  background-color: #236ad4;
+  padding: 1em;
+  color: #fff !important;
+
+  &:hover {
+    background-color: darken(#236ad4, 10%);
+  }
+}
+
+/* Estilos de encabezado */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+/* Estilos de párrafos */
+p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Estilos de lista */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+/* Estilos de imagen */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Estilos de enlaces */
+nav a.nav-link {
+  color: #fff !important;
+
+  &:hover {
+    color: #f0d90f !important;
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* Estilos de secciones */
+.section {
+  margin-bottom: 30px;
+}
+
+/* Estilos de fondo */
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Estilos de pie de página */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+
+  p {
+    color: #fff;
+    margin-top: 20px;
+  }
+}
+
+.img-crypto {
+  width: 50px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: column;
+
+  a.navbar-brand {
+    margin: 20px 0px;
+    text-align: center;
+  }
+}
+.logo {
+  width: 250px; /* Ajusta el tamaño según tu diseño */
+  height: auto;
+  margin-right: 10px; /* Espaciado entre el logo y el texto */
+}
+
+.portada {
+  color: #fff !important;
+  background-image: url(../img/portada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.noticias {
+  display: flex;
+
+  div {
+    padding: 30px;
+  }
+}
+
+.slides {
+  width: auto;
+  height: 400px;
+}
+
+.card {
+  text-align: center;
+  .img-crypto {
+    max-width: 100px;
+    margin: 0 auto; /* Para centrar la imagen en la card */
+  }
+}
+
+/* Estilos de enlaces */
+nav a.nav-link {
+  color: #fff !important;
+
+  &:hover {
+    color: #f0d90f !important;
+  }
+}
+
+a {
+  /* Cambiar el color de los enlaces para que no se confundan con los botones */
+  color: #FFF;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .noticias {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logo {
+    width: 200px;
+  }
+}
