@@ -1,5 +1,5 @@
 // Variables
-$primary-color: #236ad4;
+$primary-color: #1260d4;
 $secondary-color: #333;
 $highlight-color: #f0d90f;
 $font-family: Arial, sans-serif;
@@ -48,10 +48,18 @@ $sections: (
 }
 
 // Otras definiciones de estilos
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body{
+  font-family: 'Roboto', sans-serif !important;
+  line-height: 1.5;
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
+}
+
+h1, h2, h3, h4, h5{
+  font-weight: bold !important;
 }
 
 .card {
@@ -80,11 +88,6 @@ ul.navbar-nav.ml-auto {
   justify-content: space-evenly;
   list-style: none;
   font-weight: bold;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
 }
 
 .container {
